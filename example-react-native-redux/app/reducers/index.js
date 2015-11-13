@@ -1,5 +1,5 @@
-import counter from './counter';
-import login from './login';
+import counter from './counterReducers';
+import login from './loginReducers';
 
 export {
   counter,

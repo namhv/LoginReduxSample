@@ -9,7 +9,7 @@ export default function login(state = initialState, action = {}) {
     case types.LOGINFALSE:
       return {
         ...state,
-        loginSize: state.loginSize + 1
+        loginSize: state.loginSize * 2
       };
     case types.LOGINSUCCESS:
       return {

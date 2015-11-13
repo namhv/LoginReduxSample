@@ -129,12 +129,9 @@ export default class Counter extends Component {
                     />
                 </View>
             </View>
-            <View style={styles.count}>
-                <Text style={styles.pinkFont}>{login}</Text>
-            </View>
-            <View style={styles.signin}>
-                <Text style={styles.whiteFont} onPress={loginSuccess}>Sign In</Text>
-            </View>
+            <TouchableOpacity onPress={loginSuccess} style={styles.signin}>
+                <Text style={styles.whiteFont}>{login}</Text>
+            </TouchableOpacity>
         </View>
     );
   }

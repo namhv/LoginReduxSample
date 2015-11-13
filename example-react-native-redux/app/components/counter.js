@@ -22,7 +22,7 @@ export default class Counter extends Component {
   constructor(props) {
     super(props);
   }
-
+  
   render() {
     const { counter, increment, decrement } = this.props;
 

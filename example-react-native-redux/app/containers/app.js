@@ -4,7 +4,7 @@ import { Provider } from 'react-redux/native';
 import thunk from 'redux-thunk';
 
 import * as reducers from '../reducers';
-import LoginApp from './counterApp';
+import LoginApp from './loginApp';
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 const reducer = combineReducers(reducers);

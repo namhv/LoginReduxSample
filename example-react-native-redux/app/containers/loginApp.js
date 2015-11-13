@@ -19,7 +19,7 @@ class LoginApp extends Component {
 
     return (
       <Login
-        login={state.login}
+        login={state.loginSize}
         {...bindActionCreators(loginActions, dispatch)} />
     );
   }
