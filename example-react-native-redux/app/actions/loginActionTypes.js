@@ -1,2 +1,0 @@
-export const LOGINFALSE = 'LOGINFALSE';
-export const LOGINSUCCESS = 'LOGINSUCCESS';
