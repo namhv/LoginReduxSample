@@ -1,4 +1,4 @@
-import * as types from '../actions/actionTypes';
+import * as actions from '../actions/counterActionTypes';
 
 const initialState = {
   count: 0
@@ -6,12 +6,12 @@ const initialState = {
 
 export default function counter(state = initialState, action = {}) {
   switch (action.type) {
-    case types.INCREMENT:
+    case actions.INCREMENT:
       return {
         ...state,
         count: state.count + 1
       };
-    case types.DECREMENT:
+    case actions.DECREMENT:
       return {
         ...state,
         count: state.count - 1

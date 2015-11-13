@@ -1,20 +1,20 @@
-import * as types from '../actions/loginActions';
+import * as actions from '../actions/loginActionTypes';
 
 const initialState = {
   loginSize: 1010
 };
 
-export default function login(state = initialState, action = {}) {
+export default function loginControl(state = initialState, action = {}) {
   switch (action.type) {
-    case types.LOGINFALSE:
+    case actions.LOGINFALSE:
       return {
         ...state,
-        loginSize: state.loginSize * 2
+        loginSize: state.loginSize + 2
       };
-    case types.LOGINSUCCESS:
+    case actions.LOGINSUCCESS:
       return {
         ...state,
-        loginSize: state.loginSize - 1
+        loginSize: state.loginSize - 2
       };
     default:
       return state;

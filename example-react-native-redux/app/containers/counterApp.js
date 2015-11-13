@@ -2,14 +2,15 @@
 
 import React, { Component } from 'react-native';
 import {bindActionCreators} from 'redux';
-import Counter from '../components/counter';
+import Counter from '../components/counterView';
 import * as counterActions from '../actions/counterActions';
 import { connect } from 'react-redux/native';
 
 @connect(state => ({
   state: state.counter
 }))
-class CounterApp extends Component {
+
+export default class CounterApp extends Component {
   constructor(props) {
     super(props);
   }
@@ -24,5 +25,3 @@ class CounterApp extends Component {
     );
   }
 }
-
-export default CounterApp;

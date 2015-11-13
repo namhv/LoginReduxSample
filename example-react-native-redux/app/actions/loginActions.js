@@ -1,13 +1,13 @@
-import * as types from './actionTypes';
+import * as types from './loginActionTypes';
 
-export function loginFalse() {
-  return {
-    type: types.LOGINFALSE
-  };
-}
-
-export function loginSuccess() {
-  return {
-    type: types.LOGINSUCCESS
-  };
+export function onLogin(user, password) {
+	if (user == "name" && password == "word") {
+		return {
+    		type: types.LOGINSUCCESS
+ 		};
+	} else {
+		return {
+		    type: types.LOGINFALSE
+		};
+	}
 }

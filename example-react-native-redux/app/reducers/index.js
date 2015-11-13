@@ -1,7 +1,7 @@
 import counter from './counterReducers';
-import login from './loginReducers';
+import loginer from './loginReducers';
 
 export {
   counter,
-  login
+  loginer
 };
